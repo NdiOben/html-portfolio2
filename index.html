@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ndi Oben | Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">NO</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Ndi Oben</span></h1>
+                <h2>Frontend Web Developer</h2>
+                <p>I build exceptional digital experiences with clean, efficient code.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="oben 22.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="oben.jpg" alt="Ndi Oben">
+                </div>
+                <div class="about-text">
+                    <h3>Who am I?</h3>
+                    <p>I'm a passionate frontend web developer with 2 years of experience creating responsive and user-friendly websites. I specialize in HTML, CSS, and JavaScript, and I'm constantly learning new technologies to improve my skills.</p>
+                    <p>My journey in web development started when I built my first website for a local business. Since then, I've worked on various projects ranging from small business websites to complex web applications.</p>
+                    <div class="personal-info">
+                        <div>
+                            <span>Name:</span>
+                            <p>Ndi Oben</p>
+                        </div>
+                        <div>
+                            <span>Email:</span>
+                            <p>ndioben97@gmail.com</p>
+                        </div>
+                        <div>
+                            <span>From:</span>
+                            <p>Bamenda, Cameroon</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-content">
+                <div class="skills-description">
+                    <h3>My Skills and Experiences</h3>
+                    <p>Over the past 2 years, I've honed my skills in frontend development, focusing on creating responsive, accessible, and performant websites. Here are the technologies I work with:</p>
+                </div>
+                <div class="skills-progress">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress html"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress css"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress js"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Responsive Design</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress responsive"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="app">Web App</button>
+                <button class="filter-btn" data-filter="landing">Landing Page</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-item" data-category="web">
+                    <img src="" alt="E-commerce Website">
+                    <div class="project-overlay">
+                        <h3>E-commerce Website</h3>
+                        <p>Full responsive e-commerce site with product filtering</p>
+                        <a href="ecommerce.html" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-item" data-category="app">
+                    <img src="images/project2.jpg" alt="Task Management App">
+                    <div class="project-overlay">
+                        <h3>Task Management App</h3>
+                        <p>JavaScript application for managing daily tasks</p>
+                        <a href="task-manager.html" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-item" data-category="landing">
+                    <img src="images/project3.jpg" alt="Product Landing Page">
+                    <div class="project-overlay">
+                        <h3>Product Landing Page</h3>
+                        <p>High-converting landing page for a tech product</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-item" data-category="web">
+                    <img src="images/project1.jpg" alt="Restaurant Website">
+                    <div class="project-overlay">
+                        <h3>Restaurant Website</h3>
+                        <p>Responsive website with online reservation system</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-item" data-category="app">
+                    <img src="images/project2.jpg" alt="Weather App">
+                    <div class="project-overlay">
+                        <h3>Weather App</h3>
+                        <p>Real-time weather application using API</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-item" data-category="landing">
+                    <img src="images/project3.jpg" alt="Service Landing Page">
+                    <div class="project-overlay">
+                        <h3>Service Landing Page</h3>
+                        <p>Landing page for a digital marketing service</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-item active">
+                    <div class="testimonial-content">
+                        <p>"Oben delivered our website ahead of schedule and exceeded our expectations. His attention to detail and communication throughout the project were exceptional."</p>
+                        <div class="client-info">
+                            <img src="images/profile.jpg" alt="Client">
+                            <div>
+                                <h4>Mirielle Maya</h4>
+                                <span>CEO, DocStream DCS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Working with Oben was a pleasure. He understood our requirements perfectly and implemented them with clean, efficient code. Highly recommended!"</p>
+                        <div class="client-info">
+                            <img src="images/profile.jpg" alt="Client">
+                            <div>
+                                <h4>Mirielle Maya</h4>
+                                <span>CEO, DocStream VCS, UAE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"The website John built for our restaurant has significantly increased our online reservations. His responsive design works perfectly on all devices."</p>
+                        <div class="client-info">
+                            <img src="images/profile.jpg" alt="Client">
+                            <div>
+                                <h4>Emma Rodriguez</h4>
+                                <span>Owner, Bella Cucina</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Talk About Your Project</h3>
+                    <p>I'm currently available for freelance work or full-time positions. Feel free to reach out to discuss how I can help with your next web project.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <p>ndioben97@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span>Phone</span>
+                                <p>+237 683 163 505</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span>Location</span>
+                                <p>Douala, Cameroon</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Ndi Oben</h3>
+                    <p>Frontend Web Developer creating responsive, user-friendly websites with HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> ndioben97@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +237 683 163 505</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Douala, Cameroon</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Ndi Oben. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

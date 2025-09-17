@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager App | John Doe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">JD</div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#skills">Skills</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Project Hero Section -->
+    <section class="project-hero">
+        <div class="container">
+            <h1>Task Management App</h1>
+            <p>JavaScript application for managing daily tasks</p>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="project-details">
+        <div class="container">
+            <div class="project-overview">
+                <div class="project-image">
+                    <img src="../images/project2.jpg" alt="Task Manager App">
+                </div>
+                <div class="project-info">
+                    <h2>Project Overview</h2>
+                    <p>A responsive task management application built with vanilla JavaScript that allows users to create, organize, and track their daily tasks. Features include task categorization, due dates, priority levels, and local storage for data persistence.</p>
+                    <div class="project-meta">
+                        <div>
+                            <span>Client:</span>
+                            <p>Personal Project</p>
+                        </div>
+                        <div>
+                            <span>Date:</span>
+                            <p>January 2023</p>
+                        </div>
+                        <div>
+                            <span>Category:</span>
+                            <p>Web Application</p>
+                        </div>
+                        <div>
+                            <span>Technologies:</span>
+                            <p>HTML, CSS, JavaScript, LocalStorage API</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Visit Live Site</a>
+                    <a href="#" class="btn btn-outline">View Code</a>
+                </div>
+            </div>
+
+            <div class="project-features">
+                <h2>Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <i class="fas fa-tasks"></i>
+                        <h3>Task Creation</h3>
+                        <p>Add new tasks with titles, descriptions, due dates, and priority levels.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-filter"></i>
+                        <h3>Task Filtering</h3>
+                        <p>Filter tasks by category, priority, or completion status.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-save"></i>
+                        <h3>Data Persistence</h3>
+                        <p>Tasks are saved to local storage and persist between sessions.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Responsive Design</h3>
+                        <p>Works seamlessly on desktop, tablet, and mobile devices.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-code">
+                <h2>Code Snippets</h2>
+                <div class="code-snippet">
+                    <h3>Task Class Implementation</h3>
+                    <pre><code class="language-javascript">
+class Task {
+    constructor(title, description, dueDate, priority, category) {
+        this.id = Date.now().toString();
+        this.title = title;
+        this.description = description;
+        this.dueDate = dueDate;
+        this.priority = priority;
+        this.category = category;
+        this.completed = false;
+        this.createdAt = new Date();
+    }
+
+    toggleComplete() {
+        this.completed = !this.completed;
+    }
+
+    updatePriority(newPriority) {
+        this.priority = newPriority;
+    }
+}
+                    </code></pre>
+                </div>
+                <div class="code-snippet">
+                    <h3>LocalStorage Manager</h3>
+                    <pre><code class="language-javascript">
+class StorageManager {
+    static saveTasks(tasks) {
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+    }
+
+    static loadTasks() {
+        const tasks = JSON.parse(localStorage.getItem('tasks'));
+        return tasks ? tasks : [];
+    }
+
+    static clearTasks() {
+        localStorage.removeItem('tasks');
+    }
+}
+                    </code></pre>
+                </div>
+            </div>
+
+            <div class="project-navigation">
+                <a href="ecommerce.html" class="btn btn-outline">Previous Project</a>
+                <a href="../index.html#projects" class="btn">Back to Projects</a>
+                <a href="landing-page.html" class="btn btn-outline">Next Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>John Doe</h3>
+                    <p>Frontend Web Developer creating responsive, user-friendly websites with HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#skills">Skills</a></li>
+                        <li><a href="../index.html#projects">Projects</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> john.doe@example.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 John Doe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
